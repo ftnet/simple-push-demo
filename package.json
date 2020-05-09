@@ -37,7 +37,9 @@
   "private": true,
   "scripts": {
     "lint": "eslint '.'",
-    "test": "gulp && npm run lint && node ./test/helpers/download-browsers.js && mocha"
+    "test": "gulp && npm run lint && node ./test/helpers/download-browsers.js && mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "atob": "^2.0.0",
@@ -46,6 +48,8 @@
     "idb-keyval": "^2.1.2",
     "nstall": "^0.2.0",
     "request-promise": "^4.0.2",
-    "urlsafe-base64": "^1.0.0"
-  }
+    "urlsafe-base64": "^1.0.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
