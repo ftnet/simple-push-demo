@@ -40,12 +40,12 @@
     "test": "gulp && npm run lint && node ./test/helpers/download-browsers.js && mocha"
   },
   "dependencies": {
-    "atob": "^2.0.0",
-    "base64url": "^2.0.0",
-    "body-parser": "^1.17.2",
+    "atob": "^2.1.0",
+    "base64url": "^3.0.0",
+    "body-parser": "^1.18.2",
     "idb-keyval": "^2.1.2",
     "nstall": "^0.2.0",
-    "request-promise": "^4.0.2",
+    "request-promise": "^4.2.1",
     "urlsafe-base64": "^1.0.0"
   }
 }
